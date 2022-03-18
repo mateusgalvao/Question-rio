@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Questionário</title>
+</head>
+
+<body id="body">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Início<span class="sr-only"></span></a>
+                <a class="nav-link active" href="#">Questionário</a>
+                <a class="nav-link" href="highscores.html">Notas</a>
+            </div>
+    </nav>
+
+    <section>
+        <div class="jumbotron" id="questionContainer">
+            <h1 class="display-4" id="title">Pergunta aqui</h1>
+            <hr class="my-4">
+            <div>
+                <h5>Segundos restantes<span id="timeRemaining">60</span></h5>
+            </div>
+        </div>
+        <div class="btn-group-vertical d-flex justify-content-center" id="quizform">
+            <button type="button" class="btn-resposta" id="answerOne">Answer</button>
+            <button type="button" class="btn-resposta" id="answerTwo">Answer</button>
+            <button type="button" class="btn-resposta" id="answerThree">Answer</button>
+            <button type="button" class="btn-resposta" id="answerFour">Answer</button>
+            <button type="button" class="btn-resposta" id="answerFive">Answer</button>
+
+        </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+   
+</body>
+
+</html>
