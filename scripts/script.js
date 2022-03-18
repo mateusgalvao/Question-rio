@@ -6,7 +6,7 @@ let quizform = document.getElementById("quizform");
 let score = 0;
 let questionContainer = document.getElementById("questionContainer");
 let quizQuestion = document.getElementById("title");
-let QuestionNumber = 0;
+let questionNumber = 0;
 let timeLeft = 150;
 let timerInterval = 0;
 
@@ -96,7 +96,7 @@ function startQuestionário() {
 }
 
 function verificarResposta(userAnswerText) {
-    if (userAnswerText === questions[QuestionNumber].answer) {
+    if (userAnswerText === questions[questionNumber].answer) {
         score += 100;
     } else {
         timeLeft -= 10;
@@ -105,11 +105,11 @@ function verificarResposta(userAnswerText) {
 }
 
 function novaPergunta() {
-    if (QuestionNumber === questions.length - 1) {
+    if (questionNumber === questions.length - 1) {
         terminarQuestionario();
     } else {
-        QuestionNumber++;
-        exibirPergunta(questions[QuestionNumber]);
+        questionNumber++;
+        exibirPergunta(questions[questionNumber]);
     };
 }
 
