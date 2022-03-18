@@ -4,6 +4,8 @@ let clearBth = document.getElementById("clearBtn");
 
 let addUser = JSON.parse(localStorage.getItem("newHighScoreAdded"));
 
+//funções para criar as pontuações
+
 inicio();
 
 if (addUser) {

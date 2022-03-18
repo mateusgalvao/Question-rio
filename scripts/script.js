@@ -81,7 +81,6 @@ function exibirPergunta(questionBlock) {
 }
 
 // quando a página carrega o inicio inicia o quiz
-
 function inicio() {
     startQuestionário();
     quizform.addEventListener("click", function (e) {
@@ -90,7 +89,7 @@ function inicio() {
     });
 }
 
-//defines start quiz function
+//define a função de início do questionario
 function startQuestionário() {
     exibirPergunta(questions[0]);
     temporizador();
@@ -114,8 +113,8 @@ function novaPergunta() {
     };
 }
 
-//code to end the quiz
 
+//código para finalizar o questionario
 function terminarQuestionario() {
         quizform.remove();
         quizQuestion.textContent = "Sua pontuação é: " + score;
@@ -131,8 +130,8 @@ function terminarQuestionario() {
         quizQuestion.appendChild(savehighScoreBtn);
     limparTemporizador();
 
-    //code to save the score to local storage
 
+//código para salvar no armazenamento local
     savehighScoreBtn.addEventListener("click", function (e) {
         e.preventDefault();
         if (userinicioials.value === "") {
@@ -151,8 +150,6 @@ function terminarQuestionario() {
 }
 
 // Usando o setTimeout
-
-
 function temporizador() {
     document.getElementById("timeRemaining").innerHTML = timeLeft;
     timeLeft--;
