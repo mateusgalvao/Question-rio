@@ -149,6 +149,7 @@ function terminarQuestionario() {
     }
 }
 
+
 // Usando o setTimeout
 function temporizador() {
     document.getElementById("timeRemaining").innerHTML = timeLeft;
