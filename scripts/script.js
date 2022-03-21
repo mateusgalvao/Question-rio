@@ -21,7 +21,7 @@ let questions = [
            "Malta e Estados Unidos",
            "São Marino e Índia"],
 
-        answer: "Mônaco e Canadá"
+        answer: "Vaticano e Rússia"
     },
     {
         title: "Qual o nome do presidente do Brasil que ficou conhecido como Jango?",
